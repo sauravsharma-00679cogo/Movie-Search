@@ -1,38 +1,220 @@
-.App {
+* {
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;background-color: rgb(185, 185, 174);
+  /* background-color: slategrey; */
+}
+h1{
   text-align: center;
+  font-size: 100px;
+  color: #b32d0c;
+  
+  font-weight: 700;
+  background-color: slategrey;
+}
+button{
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+}
+.grid{
+  margin-right:10px ;
+  margin-left: 0px;
+  background-color: rgb(185, 185, 174);
+}
+.row{
+  margin-right: 50px;;
+}
+.top{
+  padding:0% 14%;
+  background-color: rgb(185, 185, 174);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.top input{
+  width:800px;
+  margin-right: 50px;
+  border-radius: 3px ;
+  background-color: #c2d3b9;
+}
+.top input:hover{
+  transform: scale(1.02);
+}
+.top button{
+  width:150px;
+  height:50px;
+  border-radius: 10px;
+  background-color: rgb(144, 182, 194);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gotoFav{
+  text-align: right;
+  margin-right: 20px;
+  font-size: 25px;
+  font-style: italic;
+  background-color: azure;
+}
+.gotoFav:hover{
+  transform: scale(1.02);
+}
+img{
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height:500px;
+  width:350px;
+  border-radius: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Items{
+  text-align: left;
+  padding: 10px 10px;
+  font-size: larger;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ListItem{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 10px 100px;
+  padding-right: 10px;
+  background-color: rgb(185, 185, 174);
 }
-
-.App-link {
-  color: #61dafb;
+.ListItem img:hover{
+  transform: scale(1.08);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.icon:hover{
+  transform: scale(1.08);
+  z-index: 3;
+}
+.icon{
+  /* background-color: rgb(56, 63, 70); */
+  align-items: center;
+  padding: 0px 10px;
+  margin-right:10px;
+  margin-top: 10px;
+}
+.icon button{
+  height: 35px;
+  width:100px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.FavItem img:hover{
+  transform: scale(1.08);
+  z-index: -1;
+}
+.FavItem{
+  background-color: rgb(185, 185, 174);
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+h2{
+  text-align: center;
+  font-weight: 700;
+  font-size:60px
+}
+@media screen and (max-width: 1024px) { 
+  img{
+    height:300px;
+    width:260px;
+    padding:10px 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .top input{
+    width:400px;
+  }
+}
+@media screen and (max-width: 768px){
+img {
+    height: 350px;
+    width: 250px;
+    padding: 10px 10px;
+    margin-left: 210px;
+}
+.icon{
+ 
+  margin-right:50px;
+  margin-top: 50px;
+}
+h1{
+  font-size: 60px;
+}
+.ListItem{
+  display: block;
+  
+  align-items: center;
+  margin: 10px 10px;
+  padding-right: 20px;
+}
+.top input{
+  width:200px;
+}
+.top button{
+  height:30px;
+}
+.btn{
+  display:block;
+}
+.btn button{
+  margin-right: 40px;
+}
+}
+@media screen and (max-width: 425px){
+  h1{
+    font-size:50px;
+  }
+  .btn button{
+    margin-right: 0px;
+    margin-left: 35px;;
+  }
+  .top{
+    padding:0% 15%;
+  }
+  .top input{
+    height: 20px;;
+    width:120px;
+  }
+  .top button{
+    height:25px;
+    width:90px;
+  }
+
+  .ListItem{
+    display: block;
+    align-items: center;
+    margin: 10px 10px;
+    padding-right: 20px;
+  }
+  img{
+    margin-left: 65px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 20px;
+  }
+  }
+@media screen and (max-width: 375px){
+  img{
+    margin-left: 60px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 20px;
+  }
+  h1{
+    font-size:30px;
+  }
+  .gotoFav{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 320px){
+  img{
+    margin-left: 25px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 20px;
+  }
+  .top{
+    padding:0% 5%;
   }
 }
